@@ -2,15 +2,18 @@
 
 workspace=plan9port
 
-sudo apt install git gcc \
-	libx11-dev \
-	libxt-dev \
+sudo apt install \
+	gcc \
+	git \
 	libfontconfig1-dev \
-	libxext-dev
+	libx11-dev \
+	libxext-dev \
+	libxt-dev
 
 if [ ! -d "${workspace}" ]; then
 	git clone "https://github.com/9fans/${workspace}"
 fi
 
 cd "${workspace}"
+
 ./INSTALL
