@@ -2,7 +2,7 @@
 
 workspace=plan9port
 
-sudo apt install \
+sudo apt install -y \
 	gcc \
 	git \
 	libfontconfig1-dev \
